@@ -1,4 +1,4 @@
-package lect04;
+package Sorting;
 
 import java.util.Arrays;
 

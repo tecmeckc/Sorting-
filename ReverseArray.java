@@ -1,5 +1,4 @@
-
-package lect04;
+package Sorting;
 
 public class ReverseArray {
   static void display(int[] arr, int x, int y) {
