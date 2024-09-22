@@ -1,4 +1,3 @@
-package Sorting;
 
 public class ReverseArray {
   static void display(int[] arr, int x, int y) {

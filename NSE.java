@@ -1,4 +1,3 @@
-package Sorting;
 
 public class NSE {
   static void display(int[] arr) {

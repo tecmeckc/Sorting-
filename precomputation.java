@@ -1,4 +1,3 @@
-package Sorting;
 
 public class precomputation {
   // Ques :Check if any subarray has sum equal to your input and then print the
