@@ -1,4 +1,3 @@
-package Sorting;
 
 public class NGE {
   static void displayArray(int[] arr) {
@@ -8,7 +7,8 @@ public class NGE {
     }
     System.out.println();
   }
-  //classwork
+
+  // classwork
   static int[] NGER(int[] arr) {
     int[] temp = new int[arr.length];
     int maxEl = -1;
@@ -21,7 +21,8 @@ public class NGE {
     }
     return temp;
   }
-  //Homework
+
+  // Homework
   static int[] NGEL(int[] arr) {
     int[] temp1 = new int[arr.length];
     int maxEl = -1;
