@@ -1,4 +1,4 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class strings {
   // Check a pallindrome by using either a new String() or two pointers
@@ -7,7 +7,7 @@ public class strings {
   public static int longestGoodVowel(String s) {
     int len = 0;
     int curr = 0;
-    s.toLowerCase();
+    s = s.toLowerCase();
     for (int j = 0; j < s.length(); j++) {
       char c = s.charAt(j);
       if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
@@ -38,20 +38,20 @@ public class strings {
   }
 
   // using two pointers
-  public static void revByPtrs(String s) {
-    int low = 0, high = s.length() - 1;
-    char c = s.charAt(low);
-    char d = s.charAt(high);
-    while (low < high) {
-      char temp = s.charAt(low);
-      c = s.charAt(high);
-      d = temp;
-      low++;
-      high--;
+  // public static void revByPtrs(String s) {
+  // int low = 0, high = s.length() - 1;
+  // char c = s.charAt(low);
+  // char d = s.charAt(high);
+  // while (low < high) {
+  // char temp = s.charAt(low);
+  // c = s.charAt(high);
+  // d = temp;
+  // low++;
+  // high--;
 
-    }
-    System.out.println(s);
-  }
+  // }
+  // System.out.println(s);
+  // }
 
   // check palindrome using new string
   public static boolean checkPalindrome(String s) {
@@ -68,17 +68,25 @@ public class strings {
   }
 
   // check palindrome using two pointers
-  public static boolean twoP(String s) {
-    s.replaceAll(" ", "");
-    s.toLowerCase();
-    int i = 0, j = s.length() - 1;
-    while (i < j) {
-      if (s.charAt(j) != s.charAt(i)) {
-        return false;
+  public static boolean isPalindrome(String s) {
+    s = s.toLowerCase();
+    int p1 = 0, p2 = s.length() - 1;
+    while (p1 < p2) {
+      char c1 = s.charAt(p1);
+      char c2 = s.charAt(p2);
+      if (!(c1 >= 'a' && c1 <= 'z' || c1 >= '0' && c1 <= '9')) {
+        p1++;
+        continue;
       }
 
-      i++;
-      j--;
+      if (!(c2 >= 'a' && c2 <= 'z' || c2 >= '0' && c2 <= '9')) {
+        p2--;
+        continue;
+      }
+      if (c1 != c2)
+        return false;
+      p1++;
+      p2--;
     }
     return true;
 
@@ -97,12 +105,13 @@ public class strings {
   }
 
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    String p1 = "Khyati";
-    String p2 = "Khyati";
-    p2 += "Choudhary";
-    String s2 = "Phone";
-    String s1 = "aabcddeeeaaiaa";
+    // Scanner sc = new Scanner(System.in);
+    // String s4 = "Khyati";
+    String s3 = "Khyati";
+    s3 += "Choudhary";
+    // String s2 = "Phone";
+    // String s1 = "aabcddeeeaaiaa";
+    System.out.println(isPalindrome(s3));
 
     // maxOcc(s2);
     // System.out.println(s1.trim());

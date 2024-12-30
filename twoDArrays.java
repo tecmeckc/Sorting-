@@ -62,6 +62,7 @@ public class twoDArrays {
   public static void transpose(int[][] arr) {
     int n = arr.length;
     int m = arr[0].length;
+    System.out.println(m);
     for (int i = 0; i < n; i++) {
       for (int j = 0; j <= i; j++) {
         int temp = arr[i][j];
@@ -72,12 +73,13 @@ public class twoDArrays {
   }
 
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    int m = 3, n = 5;
-    int[][] nums = new int[m][n];
-    int[][] arr = { { 1, 2, 3, 4, 5, }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } };
+    // Scanner sc = new Scanner(System.in);
+    // int m = 3, n = 5;
+    // int[][] nums = new int[m][n];
+    // int[][] arr = { { 1, 2, 3, 4, 5, }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15
+    // } };
 
-    System.out.println(binary2D(arr, 9));
+    // System.out.println(binary2D(arr, 9));
     // how to input 1,2,3,4 and so on in a 2D array?
     // for (int i = 0; i < nums.length; i++) {
     // for (int j = 0; j < nums[i].length; j++) {
